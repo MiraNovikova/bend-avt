@@ -44,7 +44,4 @@ console.log(`Server running at http://${hostname}:${port}/`);
 });
 
 
-const collection = db.collection("users");
-//count = Promise ( await collection.countDocuments())();
-count = await Promise( collection.countDocuments());
-console.log(`В коллекции users ${count} документа/ов`);
+
