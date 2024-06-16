@@ -1,3 +1,4 @@
+const { AsyncResource } = require('async_hooks');
 const http = require('http');
 const os = require("os");
 const userInfo = os.userInfo();
@@ -44,5 +45,6 @@ console.log(`Server running at http://${hostname}:${port}/`);
 
 
 const collection = db.collection("users");
-count = await collection.countDocuments();
+(async() => {
+count = await collection.countDocuments()})();
 console.log(`В коллекции users ${count} документа/ов`);
