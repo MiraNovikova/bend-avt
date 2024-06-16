@@ -42,8 +42,7 @@ server.listen(port, hostname, () => {
 console.log(`Server running at http://${hostname}:${port}/`);
 });
 
-/*
+
 const collection = db.collection("users");
 count = await collection.countDocuments();
 console.log(`В коллекции users ${count} документа/ов`);
-*/
