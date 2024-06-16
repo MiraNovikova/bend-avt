@@ -1,4 +1,2 @@
 #Ignored directories
-.idea/
-.vc/
-node_modules/
+node_modules/*
